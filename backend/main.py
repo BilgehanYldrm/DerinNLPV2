@@ -271,7 +271,7 @@ def parse_github_repo(full_url: str) -> tuple[str, str]:
 
 def parse_github_user_profile_url(full_url: str) -> str:
     """
-    Örnek: https://github.com/Burakgul3085 veya github.com/Burakgul3085 → login.
+    Örnek: https://github.com/BilgehanYldrm veya github.com/BilgehanYldrm -> login.
     owner/repo veya tek segment rezerve kelime ise ValueError.
     """
     raw = full_url.strip().rstrip("/")
